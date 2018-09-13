@@ -1,0 +1,33 @@
+{
+  "name": "hero",
+  "version": "1.0.0",
+  "description": "This is Hero",
+  "main": "index.js",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.3.1",
+    "normalize.scss": "^0.1.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.24.7",
+    "gulp": "^4.0.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.1",
+    "gulp.spritesmith": "^6.9.0",
+    "rimraf": "^2.6.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DikenWhite/hero.git"
+  },
+  "author": "Dmitriy Batskih",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DikenWhite/hero/issues"
+  },
+  "homepage": "https://github.com/DikenWhite/hero#readme"
+}

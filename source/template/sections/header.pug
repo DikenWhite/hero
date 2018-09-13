@@ -1,0 +1,25 @@
+header.header
+    .header__top
+        .container
+            .contacts
+                a.contact(href="tel:+3998954454545")
+                    i.fas.fa-mobile-alt
+                    span.contact__text 6337 3125
+
+                a.contact(href="#")
+                    i.fas.fa-envelope
+                    span.contact__text info@bisines.co
+
+                a.facebook-icon(href="#")
+                    i.fab.fa-facebook
+    .container
+        .header__bottom
+            .logo: img.logo__picture(src="images/logo.png" alt="picture")
+            nav.nav
+                - var items = ['Home', 'About Us', 'Our Approch', 'Our Works']
+                    each item in items
+                        if item === 'Home'
+                            a.nav__link.nav__link-active(href="#")= item
+                        else
+                            a.nav__link(href="#")= item
+            a.button.header__button.button-red(href="#") Free Consultation
