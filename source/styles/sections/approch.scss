@@ -1,5 +1,5 @@
 .approch {
-  padding: 86px 0 94px;
+  padding: 50px 0 94px;
   background: #f3f3f3;
 
   &__list {
@@ -22,6 +22,22 @@
 
       .approch__text {
         padding: 70px 90px;
+
+        @media (max-width: 985px) {
+          padding: 20px 77px;
+        }
+
+        @media (max-width: 650px) {
+          display: block;
+          width: 100%;
+        }
+      }
+
+      .approch__image {
+        @media (max-width: 650px) {
+          display: block;
+          margin: auto;
+        }
       }
 
       .approch__step {
@@ -33,10 +49,20 @@
 
   &__image {
     display: inline-block;
-    width: 340px;
-    height: 236px;
+    max-width: 340px;
+    max-height: 236px;
     position: relative;
     vertical-align: top;
+
+    @media (max-width: 985px) {
+      max-width: calc(340px / 1.5);
+      max-height: calc(236px / 1.5);
+    }
+
+    @media (max-width: 650px) {
+      display: block;
+      margin: auto;
+    }
   }
 
   &__picture {
@@ -51,6 +77,15 @@
     width: 64%;
     padding: 70px 70px 55px 90px;
     font-size: 0.875rem;
+
+    @media (max-width: 985px) {
+      padding: 20px 77px;
+      vertical-align: baseline;
+    }
+    @media (max-width: 650px) {
+      width: 100%;
+      text-align: center;
+    }
   }
 
   &__step {
@@ -67,6 +102,10 @@
     background: #de2b24;
     color: #fff;
 
+    @media (max-width: 650px) {
+      display: none;
+    }
+
     &::before {
       content: counter(count);
       counter-increment: count;
@@ -74,6 +113,10 @@
       font-family: $ff-steps;
       font-size: 3rem;
       line-height: 1;
+
+      @media (max-width: 650px) {
+        font-size: 1.5rem;
+      }
     }
   }
   &__title {
@@ -85,5 +128,21 @@
   &__description {
     margin: 0;
     line-height: 1.7;
+  }
+}
+
+
+
+@media (max-width: 650px) {
+  .approch__item:nth-child(2n) {
+    display: block;
+    
+    .approch__text {
+      text-align: center;
+    }
+  }
+
+  .approch__item {
+    padding: 20px 0;
   }
 }
